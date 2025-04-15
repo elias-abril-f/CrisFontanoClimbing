@@ -2917,6 +2917,9 @@ Google map
   .align-left-sm {
     text-align: left;
   }
+  .home-section {
+    background-position: -100px center;
+  }
 }
 
 @media only screen and (max-width: 480px) {
