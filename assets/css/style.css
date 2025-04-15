@@ -2748,11 +2748,10 @@ Google map
   .navbar-brand {
     font-size: 18px;
   }
-}
-
-@media (max-width: 1050px) {
-  /* Navbar */
-
+  .side-image {
+    /* position: relative; */
+    background-position: 75% center ;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2779,8 +2778,8 @@ Google map
   /* Half-image */
   .side-image {
     position: relative;
-    height: 300px;
-    background-position: center -25px;
+    height: 450px;
+    background-position: center 10%;
   }
 }
 
@@ -2922,9 +2921,6 @@ Google map
   .align-left-sm {
     text-align: left;
   }
-  .home-section {
-    background-position: -250px center;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2997,5 +2993,14 @@ Google map
   }
 } 
 
-@media (max-width: 767px) {}
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .home-section {
+    background-position: 20% center;
+  }
+}
+
+@media (max-width: 1110px) {
+  .home-section {
+    background-position: 20% center;
+  }
+}
