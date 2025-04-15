@@ -2783,7 +2783,7 @@ Google map
     background-position: center -25px;
   }
   .home-section {
-    background-position: -100px center;
+    background-position: -50px center;
   }
 }
 
@@ -2939,7 +2939,7 @@ Google map
   }
 }
 
-/* ===== Navbar Collapse at 1234px ===== */
+/* ===== Navbar Collapse at 1150px ===== */
 @media (max-width: 1150px) {
   /* Force collapse behavior */
   .navbar-header {
