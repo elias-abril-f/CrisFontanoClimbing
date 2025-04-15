@@ -2782,9 +2782,6 @@ Google map
     height: 300px;
     background-position: center -25px;
   }
-  .home-section {
-    background-position: center center;
-  }
 }
 
 @media (max-width: 767px) {
@@ -2993,4 +2990,12 @@ Google map
   }
   /* Add any other navbar-specific styles here */
 }
+/* hide brand*/
+@media (max-width: 416px) {
+  .navbar-brand {
+    display: none
+  }
+} 
 
+@media (max-width: 767px) {}
+@media (max-width: 767px) {}
