@@ -3004,3 +3004,20 @@ Google map
     background-position: 20% center;
   }
 }
+
+@media (max-width: 991px) {
+  iframe {
+    height:50vh !important
+  }
+}
+
+@media (max-width: 991px) {
+  .trainingCard {
+    justify-items: center;
+    
+  }
+  .price-table {
+    width: 50vw;
+  }
+}
+
