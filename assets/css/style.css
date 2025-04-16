@@ -785,7 +785,7 @@ ul {
   background: #fff;
   border: 1px solid #eaeaea;
   padding: 25px 20px;
-  margin: 15px 0 30px;
+  margin: 15px 0 15px;
   border-radius: 2px;
   text-align: center;
 }
@@ -793,7 +793,7 @@ ul {
   border-color: #cacaca;
 }
 .price-table.best {
-  margin: 0 0 30px;
+  margin: 0 0 15px;
 }
 .price-table .small {
   margin: 0;
@@ -1112,5 +1112,8 @@ ul {
   .price-table {
     width: 66%;
     max-width: 100%;
+  }
+  .price-table.best {
+    margin: 15px 0 15px;
   }
 }
