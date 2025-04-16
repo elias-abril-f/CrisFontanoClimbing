@@ -453,23 +453,7 @@
       <script src="assets/js/plugins.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
-        function resizeIframes() {
-          const iframes = document.querySelectorAll('iframe.responsive-iframe');
-          const height = window.innerHeight * 0.33;
-          iframes.forEach(iframe => {
-            iframe.style.height = height + 'px';
-          });
-        }
-        function resizePriceTables() {
-          const tables = document.querySelectorAll('.price-table');
-          const width = window.innerWidth * 0.5;
-          tables.forEach(table => {
-            table.style.width = width + 'px';
-          });
-        }
-      
-        window.addEventListener('resize', resizeIframes);
-        window.addEventListener('load', resizeIframes);
+
       </script>
     </body>
   </html>

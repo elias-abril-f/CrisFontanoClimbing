@@ -1110,7 +1110,7 @@ ul {
     justify-items: center;
   }
   .price-table {
-    width: auto;
+    width: 66%;
     max-width: 100%;
   }
 }
