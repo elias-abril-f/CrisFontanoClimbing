@@ -3006,8 +3006,10 @@ Google map
 }
 
 @media (max-width: 991px) {
-  iframe {
-    height:33vh !important
+  iframe.responsive-iframe {
+    height: auto; /* or fallback height */
+    width: 100%;
+    border: none;
   }
 }
 
@@ -3017,7 +3019,8 @@ Google map
     
   }
   .price-table {
-    width: 50vw;
+    width: auto; /* fallback */
+    max-width: 100%;
   }
 }
 

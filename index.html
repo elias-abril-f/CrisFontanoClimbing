@@ -325,7 +325,7 @@
               <div class="col-md-4 col-xs-12">
                 <div class="post mb-20">
                   <div class="post-thumbnail">
-                    <iframe src="https://www.youtube.com/embed/UjbJCObZf1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/UjbJCObZf1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
                   <div class="post-header font-alt">
                     <h2 class="post-title"><a href="https://www.youtube.com/watch?v=UjbJCObZf1k">Old Man of Stoer</a></h2>
@@ -340,7 +340,7 @@
               <div class="col-md-4 col-xs-12">
                 <div class="post mb-20">
                   <div class="post-thumbnail">
-                    <iframe src="https://www.youtube.com/embed/uN6JbCR7qzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/uN6JbCR7qzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
                   <div class="post-header font-alt">
                     <h2 class="post-title"><a href="https://www.youtube.com/watch?v=uN6JbCR7qzw">Climbing Jerry's Roof</a></h2>
@@ -356,7 +356,7 @@
               <div class="col-md-4 col-xs-12">
                 <div class="post mb-20">
                   <div class="post-thumbnail">
-                      <iframe src="https://www.youtube.com/embed/zcvg74ZH3Sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe  class="responsive-iframe" src="https://www.youtube.com/embed/zcvg74ZH3Sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
                   <div class="post-header font-alt">
                     <h2 class="post-title"><a href="https://www.youtube.com/watch?v=zcvg74ZH3Sg">Fiesta de los Biceps</a></h2>
@@ -452,5 +452,24 @@
       <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
       <script src="assets/js/plugins.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+        function resizeIframes() {
+          const iframes = document.querySelectorAll('iframe.responsive-iframe');
+          const height = window.innerHeight * 0.33;
+          iframes.forEach(iframe => {
+            iframe.style.height = height + 'px';
+          });
+        }
+        function resizePriceTables() {
+          const tables = document.querySelectorAll('.price-table');
+          const width = window.innerWidth * 0.5;
+          tables.forEach(table => {
+            table.style.width = width + 'px';
+          });
+        }
+      
+        window.addEventListener('resize', resizeIframes);
+        window.addEventListener('load', resizeIframes);
+      </script>
     </body>
   </html>
