@@ -1073,19 +1073,15 @@ body {
 
 /* Fix for social links alignment */
 .footer .footer-social-links {
-  text-align: right;
-  display: flex;
-  justify-content: flex-end; /* Align social links to the right */
-  align-items: center; /* Vertically center icons */
-  height: 100%; /* Take full height of parent */
-}
-
-.footer .footer-social-links {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .nav .fa {
   font-size: 20px;
+}
+
+.footer .footer-social-links a {
+  padding: 0 15px;
 }
 
 @media (max-width: 416px) {
