@@ -1024,7 +1024,11 @@ ul {
     text-align: left;
   }
 }
-/* Added */
+
+body {
+  min-width: 320px; /* Adjust this value as needed */
+}
+
 .module,
 .module-small {
   position: relative;
@@ -1048,6 +1052,85 @@ ul {
   margin: 0 0 15px;
 }
 
+/* Ensure the footer row takes full height */
+.footer .row {
+  display: flex;
+  align-items: center; /* Vertically center children */
+}
+
+/* Make sure columns stretch to full height (if needed) */
+.footer,
+.footer .col-sm-3 {
+  display: flex;
+  align-items: center; /* Vertically center content inside columns */
+}
+
+/* Fix for .copyright text alignment */
+.footer .copyright {
+  margin: 0;
+  line-height: normal; /* Reset line-height if needed */
+}
+
+/* Fix for social links alignment */
+.footer .footer-social-links {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end; /* Align social links to the right */
+  align-items: center; /* Vertically center icons */
+  height: 100%; /* Take full height of parent */
+}
+
+.footer .footer-social-links {
+  font-size: 25px;
+}
+
+.nav .fa {
+  font-size: 20px;
+}
+
+@media (max-width: 416px) {
+  .navbar-brand {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 767px) {
+  .home-section {
+    background-position: 20% center;
+  }
+  .footer .footer-social-links {
+    text-align: center;
+  }
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer,
+  .footer .col-sm-3 {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer .footer-social-links {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .trainingCard {
+    justify-items: center;
+  }
+  .price-table {
+    width: 66%;
+    max-width: 100%;
+  }
+  .price-table.best {
+    margin: 15px 0 15px;
+  }
+  iframe.responsive-iframe {
+    height: auto;
+    width: 100%;
+    border: none;
+  }
+}
 @media (max-width: 1150px) {
   .navbar-header {
     float: none;
@@ -1084,38 +1167,7 @@ ul {
   .navbar-custom li > a:hover {
     background: rgba(255, 255, 255, 0.1) !important;
   }
-}
-@media (max-width: 416px) {
-  .navbar-brand {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
   .home-section {
     background-position: 20% center;
-  }
-}
-@media (max-width: 1110px) {
-  .home-section {
-    background-position: 20% center;
-  }
-}
-@media (max-width: 991px) {
-  iframe.responsive-iframe {
-    height: auto;
-    width: 100%;
-    border: none;
-  }
-}
-@media (max-width: 991px) {
-  .trainingCard {
-    justify-items: center;
-  }
-  .price-table {
-    width: 66%;
-    max-width: 100%;
-  }
-  .price-table.best {
-    margin: 15px 0 15px;
   }
 }
