@@ -877,7 +877,11 @@
                 </div>
                 <div class="text-center">
                   <div class="form-group">
-                    <!-- <div required="required" class="h-captcha" data-captcha="true"></div> -->
+                    <div
+                      required="required"
+                      class="h-captcha"
+                      data-captcha="true"
+                    ></div>
                   </div>
                   <button
                     class="btn btn-block btn-round btn-d"
@@ -952,19 +956,20 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
-    <!-- <script>
-        const form = document.getElementById('contactForm');
-        
-        form.addEventListener('submit', function(e) {
-        
-            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-        
-            if (!hCaptcha) {
-                e.preventDefault();
-                alert("Please fill out captcha field")
-                return
-            }
-        });
-        </script> -->
+    <script>
+      const form = document.getElementById("contactForm");
+
+      form.addEventListener("submit", function (e) {
+        const hCaptcha = form.querySelector(
+          "textarea[name=h-captcha-response]"
+        ).value;
+
+        if (!hCaptcha) {
+          e.preventDefault();
+          alert("Please fill out captcha field");
+          return;
+        }
+      });
+    </script>
   </body>
 </html>
