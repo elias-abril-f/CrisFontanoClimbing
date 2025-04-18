@@ -1112,15 +1112,26 @@ body {
 }
 @media (max-width: 991px) {
   .trainingCard {
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
   }
   .price-table {
-    width: 66%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px; /* Set a reasonable max-width */
+    margin-left: auto;
+    margin-right: auto;
   }
   .price-table.best {
-    margin: 15px 0 15px;
+    margin: 15px auto;
   }
+  .row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   iframe.responsive-iframe {
     height: auto;
     width: 100%;
