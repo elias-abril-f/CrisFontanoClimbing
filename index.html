@@ -350,7 +350,6 @@
                   <div class="post-entry">
                     <p>Bouldering vlog about climbing one of North Wales' most famous benchmarks</p>
                   </div>
-                  <!-- <div class="post-more"><a class="more-link" href="#">Read more</a></div> -->
                 </div>
               </div>
               <div class="col-md-4 col-xs-12">
@@ -366,7 +365,6 @@
                   <div class="post-entry">
                     <p>We tackle La Fiesta de los Biceps, one of the most famous multipitch climbs and the longest overhang in Europe. </p>
                   </div>
-                  <!-- <div class="post-more"><a class="more-link" href="#">Read more</a></div> -->
                 </div>
               </div>
             </div>
@@ -384,7 +382,9 @@
             </div>
             <div class="row">
               <div class="col-sm-8">
-                <form id="contactFormFormspree" role="form" action="https://formspree.io/f/meoadpaa" method="POST">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="06603cdf-ee62-495f-b736-5bf955de83af">
+                  <input type="hidden" name="subject" value="Fontano Climbing Contact Form">
                   <div class="form-group">
                     <label class="sr-only" for="name">Name</label>
                     <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
@@ -400,10 +400,12 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="text-center">
+                    <div class="form-group">
+                      <!-- <div required="required" class="h-captcha" data-captcha="true"></div> -->
+                    </div>
                     <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
                   </div>
                 </form>
-                <!-- <div class="ajax-response font-alt" id="contactFormResponse"></div> -->
               </div>
               <div class="col-sm-4">
                 <div class="alt-features-item mt-0">
@@ -452,5 +454,20 @@
       <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
       <script src="assets/js/plugins.js"></script>
       <script src="assets/js/main.js"></script>
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+      <!-- <script>
+        const form = document.getElementById('contactForm');
+        
+        form.addEventListener('submit', function(e) {
+        
+            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+        
+            if (!hCaptcha) {
+                e.preventDefault();
+                alert("Please fill out captcha field")
+                return
+            }
+        });
+        </script> -->
     </body>
   </html>
