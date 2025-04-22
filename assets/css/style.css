@@ -2106,6 +2106,10 @@ Google map
 
 .testimonials-slider {
   position: relative;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-text {
@@ -2923,6 +2927,10 @@ Google map
     height: auto;
     width: 100%;
     border: none;
+  }
+  .testimonials-slider {
+    position: relative;
+    height: 100%;
   }
 }
 

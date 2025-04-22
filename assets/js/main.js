@@ -1,3 +1,5 @@
+console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
+
 /* ---------------------------------------------- /*
  * Preloader
  /* ---------------------------------------------- */
@@ -468,7 +470,7 @@
                         $('#contactForm textarea[name=message]').val('');
                     },
                     error: function (data) {
-                        alert("Error occured! Please try again");
+                        alert("Error occurd! Please try again");
                     }
                 });
 
