@@ -2932,6 +2932,11 @@ Google map
     position: relative;
     height: 100%;
   }
+  div.post-thumbnail iframe {
+    height: 33vh;
+    width: 100%;
+    /* width: 100%; */
+  }
 }
 
 @media (max-width: 416px) {
