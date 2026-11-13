@@ -300,7 +300,9 @@
         if ($('.testimonials-slider').length > 0 ) {
             $('.testimonials-slider').flexslider( {
                 animation: "slide",
-                smoothHeight: true
+                // Slides share the tallest slide's height (see style.css),
+                // so the section no longer resizes and shifts the page.
+                smoothHeight: false
             });
         }
 

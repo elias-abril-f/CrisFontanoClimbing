@@ -2112,6 +2112,25 @@ Google map
   justify-content: center;
 }
 
+.testimonials-slider .flex-viewport {
+  width: 100%;
+}
+
+/* Every review gets the height of the tallest one, content centred,
+   so the slider doesn't change size (and shift the page) on each slide */
+.testimonials-slider .slides {
+  display: flex;
+  align-items: stretch;
+}
+
+.testimonials-slider .slides > li {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  float: none !important;
+  flex-shrink: 0;
+}
+
 .testimonial-text {
   text-align: center;
   font-style: normal;
